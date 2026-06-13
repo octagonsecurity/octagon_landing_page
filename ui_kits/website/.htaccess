@@ -1,0 +1,31 @@
+RewriteEngine On
+
+# Legacy Duda pages
+RewriteRule ^about-us/?$ /about/ [R=301,L]
+RewriteRule ^contact/?$ /#contact [R=301,L,NE]
+RewriteRule ^reviews/?$ /#reviews [R=301,L,NE]
+RewriteRule ^about\.html$ /about/ [R=301,L]
+RewriteRule ^home-and-business-security-system-installation/?$ /services/home-security/ [R=301,L]
+RewriteRule ^security-system-installation-miami/?$ /services/home-security/ [R=301,L]
+RewriteRule ^smart-security-cameras-and-video-surveillance-systems/?$ /services/cameras/ [R=301,L]
+RewriteRule ^burglar-alarm-installation-and-intrusion-detection/?$ /services/burglar-alarm/ [R=301,L]
+RewriteRule ^fire-alarm-systems-and-smoke-detection-installation/?$ /services/fire-alarm/ [R=301,L]
+RewriteRule ^access-control-systems-and-keyless-entry-solutions/?$ /services/access-control/ [R=301,L]
+RewriteRule ^access-control-faq/?$ /services/access-control/ [R=301,L]
+RewriteRule ^structured-cabling/?$ /services/structured-cabling/ [R=301,L]
+RewriteRule ^structured-cabling-faq/?$ /services/structured-cabling/ [R=301,L]
+RewriteRule ^warehouse-security-systems-in-miami-dade/?$ /services/warehouse/ [R=301,L]
+
+# Query-param service URLs
+RewriteCond %{QUERY_STRING} ^s=([a-z-]+)$
+RewriteRule ^service\.html$ /services/%1/ [R=301,L]
+RewriteRule ^service\.html$ /services/home-security/ [R=301,L]
+
+# Trailing slash for service pages
+RewriteRule ^services/home-security$ /services/home-security/ [R=301,L]
+RewriteRule ^services/cameras$ /services/cameras/ [R=301,L]
+RewriteRule ^services/burglar-alarm$ /services/burglar-alarm/ [R=301,L]
+RewriteRule ^services/fire-alarm$ /services/fire-alarm/ [R=301,L]
+RewriteRule ^services/access-control$ /services/access-control/ [R=301,L]
+RewriteRule ^services/structured-cabling$ /services/structured-cabling/ [R=301,L]
+RewriteRule ^services/warehouse$ /services/warehouse/ [R=301,L]

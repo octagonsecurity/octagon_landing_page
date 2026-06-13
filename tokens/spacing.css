@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Octagon Security — Spacing, Radius, Elevation, Layout
+   4px base grid. Squared / industrial: small radii, firm shadows.
+   ========================================================================== */
+
+:root {
+  /* --- Spacing scale (4px base) --- */
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4 */
+  --space-2:  0.5rem;   /* 8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  2.5rem;   /* 40 */
+  --space-8:  3rem;     /* 48 */
+  --space-9:  4rem;     /* 64 */
+  --space-10: 5rem;     /* 80 */
+  --space-12: 7rem;     /* 112 — section rhythm */
+
+  /* --- Radius --- squared brand: tight corners --- */
+  --radius-none: 0;
+  --radius-xs:  2px;
+  --radius-sm:  4px;
+  --radius-md:  6px;   /* default control / card */
+  --radius-lg:  10px;
+  --radius-xl:  16px;
+  --radius-pill: 999px;
+
+  /* --- Borders --- */
+  --border-width: 1px;
+  --border-width-strong: 2px;
+  --border-accent: 3px; /* red accent bar under headings */
+
+  /* --- Elevation (firm, low-spread — industrial, not floaty) --- */
+  --shadow-xs: 0 1px 2px rgba(11,11,12,0.06);
+  --shadow-sm: 0 1px 3px rgba(11,11,12,0.10), 0 1px 2px rgba(11,11,12,0.06);
+  --shadow-md: 0 4px 10px rgba(11,11,12,0.10), 0 2px 4px rgba(11,11,12,0.06);
+  --shadow-lg: 0 12px 28px rgba(11,11,12,0.14), 0 4px 8px rgba(11,11,12,0.08);
+  --shadow-focus: 0 0 0 3px rgba(190,31,36,0.30); /* red focus ring */
+
+  /* --- Layout --- */
+  --container-max: 1200px;
+  --container-wide: 1320px;
+  --section-pad-y: clamp(3rem, 7vw, 7rem);
+  --gutter: clamp(1rem, 4vw, 2.5rem); /* @kind spacing */
+
+  /* --- Motion --- short, businesslike. No bounce. --- */
+  --ease-standard: cubic-bezier(0.2, 0, 0.2, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast: 120ms; /* @kind other */
+  --dur-base: 200ms; /* @kind other */
+  --dur-slow: 320ms; /* @kind other */
+}

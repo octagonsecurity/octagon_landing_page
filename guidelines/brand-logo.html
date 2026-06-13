@@ -1,0 +1,25 @@
+<!-- @dsCard group="Brand" viewport="700x180" name="Logo — The Octagon Eye" subtitle="Primary mark. Use the file; never redraw. Clear space = ¼ height." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 20px 24px; background: var(--surface-page); font-family: var(--font-body); }
+  .row { display: flex; gap: 18px; align-items: stretch; }
+  .tile { flex: 1; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; padding: 18px; border: 1px solid var(--border-default); }
+  .tile img { height: 96px; }
+  .light { background: var(--surface-page); }
+  .concrete { background: var(--surface-concrete); }
+  .dark { background: var(--surface-dark); border-color: var(--border-dark); }
+  .lab { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 10px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div style="flex:1"><div class="tile light"><img src="../assets/logo-full.png" alt="Octagon Security mark"></div><div class="lab">on white</div></div>
+    <div style="flex:1"><div class="tile concrete"><img src="../assets/logo-full.png" alt="Octagon Security mark"></div><div class="lab">on concrete</div></div>
+    <div style="flex:1"><div class="tile dark"><img src="../assets/logo-full.png" alt="Octagon Security mark"></div><div class="lab">on dark</div></div>
+  </div>
+</body>
+</html>

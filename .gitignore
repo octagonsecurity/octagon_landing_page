@@ -1,0 +1,14 @@
+# Build output (generated on Vercel via prepare-deploy.mjs)
+dist/
+
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# OS / editor
+.DS_Store
+.claude/
+
+# Dependencies (if added later)
+node_modules/

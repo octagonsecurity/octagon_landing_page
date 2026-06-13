@@ -1,0 +1,24 @@
+{
+  "name": "Octagon Security",
+  "short_name": "Octagon",
+  "description": "Commercial & residential security systems across South Florida — cameras, alarms, fire, access control & cabling.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#BE1F24",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/assets/rob-mascot.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/logo-full.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

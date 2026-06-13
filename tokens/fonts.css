@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Octagon Security — Fonts
+   Display/Heading: Saira Condensed + Saira (industrial squared geometric —
+   matches the chunky condensed logo wordmark).
+   Body: Open Sans (clean, dependable — the realistic Duda-site match).
+   Mono: IBM Plex Mono (license #s, system codes, monitoring data).
+
+   NOTE: Loaded from Google Fonts. Original brand wordmark may be a custom/
+   licensed face — these are the closest free substitutes. Flagged to client.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Saira:wght@500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');

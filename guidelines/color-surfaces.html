@@ -1,0 +1,36 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Surfaces & Text" subtitle="Default reading surfaces and text roles." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 18px; background: var(--surface-subtle); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .panel { border-radius: var(--radius-md); padding: 14px; border: 1px solid var(--border-default); }
+  .panel h4 { font-family: var(--font-heading); font-size: 13px; margin: 0 0 6px; text-transform: uppercase; letter-spacing: .04em; }
+  .panel p { margin: 0; font-size: 12.5px; }
+  .tag { font-family: var(--font-mono); font-size: 10px; opacity: .7; display:block; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="panel" style="background:var(--surface-card)">
+      <h4 style="color:var(--text-strong)">On White</h4>
+      <p style="color:var(--text-body)">Body text, gray-800.</p>
+      <p style="color:var(--text-muted);margin-top:4px;font-size:12px">Muted meta, gray-500.</p>
+      <span class="tag" style="color:var(--text-muted)">--surface-card</span>
+    </div>
+    <div class="panel" style="background:var(--surface-concrete)">
+      <h4 style="color:var(--text-strong)">Concrete</h4>
+      <p style="color:var(--text-body)">Section band surface.</p>
+      <span class="tag" style="color:var(--text-muted)">--surface-concrete</span>
+    </div>
+    <div class="panel" style="background:var(--surface-dark);border-color:var(--border-dark)">
+      <h4 style="color:var(--text-inverse)">On Dark</h4>
+      <p style="color:#C6C8CB">Footer / dramatic band.</p>
+      <span class="tag" style="color:#9DA0A4">--surface-dark</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!-- @dsCard group="Website" viewport="1320x780" name="About Us Page" subtitle="About page: hero, stats, story, values, CTA." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Octagon Security | South Florida Security Installer</title>
+  <meta name="description" content="Family-run South Florida security company with 65+ years combined experience. Licensed (EF0000848), ETL/UL listed. Serving Miami-Dade, Broward &amp; Palm Beach.">
+  <link rel="canonical" href="https://www.octagonsecured.com/about/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Octagon Security">
+  <meta property="og:title" content="About Octagon Security | South Florida Security Installer">
+  <meta property="og:description" content="65+ years combined experience installing security systems across Miami-Dade, Broward &amp; Palm Beach. Licensed, insured, built on referrals.">
+  <meta property="og:url" content="https://www.octagonsecured.com/about/">
+  <meta property="og:image" content="https://www.octagonsecured.com/assets/team-ladders.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Octagon Security">
+  <meta name="twitter:description" content="65+ years combined experience. Licensed South Florida security installer serving Miami-Dade, Broward &amp; Palm Beach.">
+  <meta name="twitter:image" content="https://www.octagonsecured.com/assets/team-ladders.png">
+  <link rel="icon" type="image/png" href="../../../assets/rob-mascot.png">
+  <link rel="apple-touch-icon" href="../../../assets/rob-mascot.png">
+  <link rel="manifest" href="/manifest.json">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://www.octagonsecured.com/#business",
+    "name": "Octagon Security",
+    "url": "https://www.octagonsecured.com/",
+    "telephone": "+1-786-928-0986",
+    "image": "https://www.octagonsecured.com/assets/hero-og.png",
+    "logo": "https://www.octagonsecured.com/assets/logo-full.png",
+    "description": "Commercial and residential security systems installed across Miami-Dade, Broward and Palm Beach.",
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Miami-Dade County, FL" },
+      { "@type": "AdministrativeArea", "name": "Broward County, FL" },
+      { "@type": "AdministrativeArea", "name": "Palm Beach County, FL" }
+    ],
+    "geo": { "@type": "GeoCoordinates", "latitude": 26.139327, "longitude": -80.269756 },
+    "sameAs": [
+      "https://instagram.com/octagonsecurityllc",
+      "https://www.facebook.com/share/1Cb8X6MGRq/",
+      "https://yelp.com/biz/octagon-security-kendall"
+    ],
+    "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "FL License EF0000848" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.octagonsecured.com/" },
+      { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.octagonsecured.com/about/" }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../../../styles.css">
+  <link rel="stylesheet" href="../site.css">
+  <style>
+.ab-hero{position:relative;color:#fff;overflow:hidden}
+.ab-hero__bg{position:absolute;inset:0;background:url('../../../assets/install-panel.webp') center 30%/cover no-repeat,url('../../../assets/install-panel.png') center 30%/cover no-repeat}
+.ab-hero__scrim{position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,11,12,.88),rgba(11,11,12,.6))}
+.ab-hero__inner{position:relative;padding-block:clamp(3rem,7vw,6rem)}
+.ab-crumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:var(--font-heading);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--gray-400);margin-bottom:var(--space-4)}
+.ab-crumb a{color:var(--gray-400)}.ab-crumb a:hover{color:#fff}.ab-crumb svg{width:13px;height:13px}
+.ab-eye{font-family:var(--font-heading);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--color-primary);display:flex;align-items:center;gap:8px;margin-bottom:var(--space-3)}
+.ab-eye::before{content:'';width:24px;height:3px;background:var(--color-primary);display:inline-block}
+.ab-hero__h{font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,6vw,5rem);line-height:.96;letter-spacing:-.01em;color:#fff;margin:0 0 var(--space-4);overflow-wrap:break-word}
+.ab-hero__sub{color:var(--gray-200);font-size:clamp(1rem,1.3vw,1.15rem);line-height:1.6;max-width:56ch;margin:0}
+.ab-stats{background:var(--color-primary)}
+.ab-stats__inner{display:flex;flex-wrap:wrap;justify-content:space-around;padding-block:var(--space-6)}
+.ab-stat{flex:1;min-width:150px;text-align:center;padding:var(--space-4) var(--space-5);border-right:1px solid rgba(255,255,255,.18)}
+.ab-stat:last-child{border-right:0}
+.ab-stat__n{font-family:var(--font-display);font-weight:800;font-size:clamp(2.2rem,4vw,3rem);color:#fff;line-height:1;display:block}
+.ab-stat__l{font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:var(--text-xs);color:rgba(255,255,255,.8);margin-top:6px;display:block}
+.ab-intro{padding-block:var(--section-pad-y)}
+.ab-intro__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.ab-intro__copy{display:flex;flex-direction:column;gap:var(--space-5)}
+.ab-intro__body{font-size:var(--text-lg);line-height:1.65;color:var(--text-body);margin:0}
+.ab-intro__body--sm{font-size:var(--text-md)}
+.ab-intro__cta{display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:center}
+.ab-intro__phone{font-family:var(--font-heading);font-weight:700;font-size:var(--text-xl);color:var(--text-strong);display:inline-flex;align-items:center;gap:8px}
+.ab-intro__phone svg{color:var(--color-primary);width:20px;height:20px}
+.ab-intro__phone:hover{color:var(--color-primary);text-decoration:none}
+.ab-intro__img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/3;background:var(--gray-100)}
+.ab-intro__img img{width:100%;height:100%;object-fit:cover;display:block}
+.ab-story{background:var(--surface-concrete);padding-block:var(--section-pad-y)}
+.ab-story__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.ab-story__imgs{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)}
+.ab-story__imgs--grid .ab-story__img img{aspect-ratio:4/3}
+.ab-story__img{border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-md)}
+.ab-story__img img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
+.ab-story__body{display:flex;flex-direction:column;gap:var(--space-5)}
+.ab-story__text{font-size:var(--text-md);line-height:1.7;color:var(--text-body);margin:0}
+.ab-story__pull{font-family:var(--font-heading);font-weight:700;font-size:var(--text-xl);color:var(--text-strong);line-height:1.3;border-left:4px solid var(--color-primary);padding-left:var(--space-5);margin:0}
+.ab-story__sig{font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:var(--text-2xl);color:var(--text-strong);letter-spacing:-.01em;margin:0}
+.ab-story__sig span{color:var(--color-primary)}
+.ab-values{padding-block:var(--section-pad-y)}
+.ab-values__head{max-width:680px;margin:0 auto var(--space-8);text-align:center}
+.ab-values__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5)}
+.ab-value{display:flex;flex-direction:column;gap:var(--space-3)}
+.ab-value__ic{width:60px;height:60px;display:grid;place-items:center;border-radius:var(--radius-md);background:var(--gray-900);color:#fff}
+.ab-value__ic svg{width:28px;height:28px}
+.ab-value__n{font-family:var(--font-heading);font-weight:700;font-size:var(--text-xl);color:var(--text-strong);margin:0}
+.ab-value__rule{width:36px;height:3px;background:var(--color-primary);border:0}
+.ab-value__body{font-size:var(--text-md);line-height:1.65;color:var(--text-body);margin:0}
+.ab-cta{background:var(--gray-950);padding-block:var(--section-pad-y)}
+.ab-cta__inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-6)}
+.ab-cta__eyebrow{font-family:var(--font-heading);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:var(--text-xs);color:var(--color-primary);display:block;margin-bottom:var(--space-3)}
+.ab-cta__h{font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4vw,3rem);color:#fff;margin:0 0 8px;line-height:1}
+.ab-cta__h span{color:var(--color-primary)}
+.ab-cta__sub{color:var(--gray-300);margin:0;font-size:var(--text-md)}
+.ab-cta__btns{display:flex;flex-wrap:wrap;gap:var(--space-4);flex:none}
+@media(max-width:860px){.ab-intro__grid,.ab-story__grid{grid-template-columns:1fr}.ab-intro__img{order:-1;aspect-ratio:16/9}.ab-story__imgs{order:-1}.ab-values__grid{grid-template-columns:1fr}.ab-cta__inner{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.ab-story__imgs{grid-template-columns:1fr}.ab-stats__inner{flex-direction:column}.ab-stat{border-right:0;border-bottom:1px solid rgba(255,255,255,.15)}.ab-stat:last-child{border-bottom:0}}
+  </style>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+  <script src="../../../_ds_bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="../seo-config.js"></script>
+</head>
+<body>
+  <noscript>
+    <article>
+      <h1>About Octagon Security</h1>
+      <p>A South Florida security company built on experience, clean work, and long-term client relationships. We install systems that perform — and we're still there when you call.</p>
+      <p>At Octagon Security, we focus on delivering reliable security and infrastructure solutions for businesses and homeowners across South Florida. With over 65 years of combined experience, our team has worked across residential installations to larger commercial systems.</p>
+      <p>Call <a href="tel:786-928-0986">786-928-0986</a> · FL License EF0000848</p>
+    </article>
+  </noscript>
+<div id="root"></div>
+<script type="text/babel" src="../Picture.jsx"></script>
+<script type="text/babel" src="../Header.jsx"></script>
+<script type="text/babel" src="../ContactForm.jsx"></script>
+<script type="text/babel" src="../Footer.jsx"></script>
+<script type="text/babel">
+const DS = () => window.OctagonSecurityDesignSystem_9e6033;
+const Ic = ({ n }) => <i data-lucide={n}></i>;
+const Btn = (p) => { const { Button } = DS(); return <Button {...p} />; };
+
+const STATS = [['65+','Years of Combined Experience'],['3','Counties Served'],['24/7','Monitoring & Support'],['100%','Licensed & Insured']];
+const VALUES = [
+  ['wrench','Installed Right','We design systems that actually fit the property — not off-the-shelf kits. Every installation is clean, organized, and built to last.'],
+  ['phone-call','Responsive After the Job','Our relationship doesn\'t end at installation. We stay reachable for service, upgrades, and support whenever you need us.'],
+  ['users','Built on Referrals','Most of our business comes from repeat clients and word of mouth. That tells us we\'re doing something right — and we intend to keep it that way.'],
+];
+
+function AboutHero() {
+  return (
+    <section className="ab-hero">
+      <div className="ab-hero__bg"/><div className="ab-hero__scrim"/>
+      <div className="os-container ab-hero__inner">
+        <nav className="ab-crumb">
+          <a href="/">Home</a><Ic n="chevron-right"/>
+          <span style={{color:'#fff'}}>About Us</span>
+        </nav>
+        <div className="ab-eye">Who We Are</div>
+        <h1 className="ab-hero__h">About<br/>Octagon<br/>Security</h1>
+        <p className="ab-hero__sub">A South Florida security company built on experience, clean work, and long-term client relationships. We install systems that perform — and we're still there when you call.</p>
+      </div>
+    </section>
+  );
+}
+
+function StatsBar() {
+  return (
+    <div className="ab-stats">
+      <div className="os-container ab-stats__inner">
+        {STATS.map(([n,l]) => <div className="ab-stat" key={l}><span className="ab-stat__n">{n}</span><span className="ab-stat__l">{l}</span></div>)}
+      </div>
+    </div>
+  );
+}
+
+function WhoWeAre({ onQuote }) {
+  const { SectionTitle } = DS();
+  return (
+    <section className="ab-intro">
+      <div className="os-container ab-intro__grid">
+        <div className="ab-intro__copy">
+          <SectionTitle eyebrow="We Are Octagon Security" title="Your Partner in Complete Property Protection"/>
+          <p className="ab-intro__body">At Octagon Security, we focus on delivering reliable security and infrastructure solutions for businesses and homeowners across South Florida. Our work is built around a simple approach — design systems that perform, install them cleanly, and stay responsive when our clients need support.</p>
+          <p className="ab-intro__body ab-intro__body--sm">From CCTV and burglar alarm systems with 24/7 monitoring to fire alarm installation and structured cabling, we provide solutions that are tailored, easy to manage, and built for long-term use.</p>
+          <div className="ab-intro__cta">
+            <a className="ab-intro__phone" href="tel:786-928-0986"><Ic n="phone"/>786-928-0986</a>
+            <Btn variant="primary" size="md" onClick={onQuote}>Get a Quote</Btn>
+          </div>
+        </div>
+        <div className="ab-intro__img"><Picture src="../../../assets/team-ladders.png" alt="Octagon Security team running cable on site" loading="lazy" decoding="async"/></div>
+      </div>
+    </section>
+  );
+}
+
+function OurStory() {
+  const { SectionTitle } = DS();
+  return (
+    <section className="ab-story">
+      <div className="os-container ab-story__grid">
+        <div className="ab-story__imgs ab-story__imgs--grid">
+          <div className="ab-story__img"><Picture src="../../../assets/story-vintage-booth.png" alt="Early days — founder at a security trade show" loading="lazy" decoding="async"/></div>
+          <div className="ab-story__img"><Picture src="../../../assets/story-vintage-truck.png" alt="Early days — team on the road" loading="lazy" decoding="async"/></div>
+          <div className="ab-story__img"><Picture src="../../../assets/team-ladders.png" alt="Octagon Security team running cable" loading="lazy" decoding="async"/></div>
+          <div className="ab-story__img"><Picture src="../../../assets/team-van.png" alt="Octagon Security van on the job" loading="lazy" decoding="async"/></div>
+        </div>
+        <div className="ab-story__body">
+          <SectionTitle eyebrow="Our Story" title="Get to Know Us"/>
+          <p className="ab-story__text">Octagon Security is built on decades of hands-on industry experience. With over 65 years of combined experience, our team has worked across a wide range of projects — from residential installations to larger commercial systems including warehouses, office buildings, and multi-tenant properties.</p>
+          <p className="ab-story__text">That experience gives us a practical understanding of how systems need to be designed, installed, and supported in real-world conditions.</p>
+          <blockquote className="ab-story__pull">Our business has grown primarily through repeat clients and referrals — clear communication, reliable work, and ongoing support after the installation is complete.</blockquote>
+          <p className="ab-story__text">We focus on doing the job right and being a company our clients can continue to rely on for future projects, upgrades, and service.</p>
+          <p className="ab-story__sig">We're not just installing systems —<br/><span>we're building relationships.</span></p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Values() {
+  const { SectionTitle } = DS();
+  return (
+    <section className="ab-values">
+      <div className="os-container">
+        <div className="ab-values__head">
+          <SectionTitle eyebrow="How We Operate" title="Three Things We Never Compromise On"
+            subtitle="These aren't slogans. They're the standard every job is held to." align="center"/>
+        </div>
+        <div className="ab-values__grid">
+          {VALUES.map(([icon,name,body]) => (
+            <div className="ab-value" key={name}>
+              <span className="ab-value__ic"><Ic n={icon}/></span>
+              <h3 className="ab-value__n">{name}</h3>
+              <p className="ab-value__body">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CtaClose({ onQuote }) {
+  return (
+    <section className="ab-cta">
+      <div className="os-container ab-cta__inner">
+        <div>
+          <span className="ab-cta__eyebrow">Get Octagon Secured Today</span>
+          <h2 className="ab-cta__h">Don't get robbed—<span>call Rob.</span></h2>
+          <p className="ab-cta__sub">Free estimates · Licensed &amp; insured · FL License EF0000848</p>
+        </div>
+        <div className="ab-cta__btns">
+          <Btn variant="primary" size="lg" iconLeft={<Ic n="phone"/>} href="tel:786-928-0986">786-928-0986</Btn>
+          <Btn variant="secondary" size="lg" onClick={onQuote}
+            style={{borderColor:'rgba(255,255,255,.3)',color:'#fff',background:'rgba(255,255,255,.06)'}}>
+            Get a Free Quote
+          </Btn>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function App() {
+  const [quote, setQuote] = React.useState(false);
+  React.useEffect(() => { window.lucide && window.lucide.createIcons(); });
+  return (
+    <div className="os-site">
+      <Header onQuote={() => setQuote(true)} activePage="about" />
+      <main>
+        <AboutHero/>
+        <StatsBar/>
+        <WhoWeAre onQuote={() => setQuote(true)}/>
+        <OurStory/>
+        <Values/>
+        <CtaClose onQuote={() => setQuote(true)}/>
+      </main>
+      <Footer />
+      <QuoteModal open={quote} onClose={() => setQuote(false)}/>
+    </div>
+  );
+}
+
+const mount = () => {
+  if (!window.OctagonSecurityDesignSystem_9e6033 || !window.Header || !window.Footer || !window.QuoteModal) return setTimeout(mount, 40);
+  ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+};
+mount();
+</script>
+</body>
+</html>

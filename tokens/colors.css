@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Octagon Security — Color Tokens
+   Brand: red alert + concrete gray + high-contrast black/white.
+   Base palette first, then semantic aliases.
+   ========================================================================== */
+
+:root {
+  /* --- Brand Red (alert / action) --- base brand = #BE1F24 = rgb(190,31,36) */
+  --red-50:  #FCEFEF;
+  --red-100: #F8DADB;
+  --red-200: #EFB0B2;
+  --red-300: #E08488;
+  --red-400: #CE4B50;
+  --red-500: #BE1F24;  /* PRIMARY BRAND RED */
+  --red-600: #A2191D;  /* hover */
+  --red-700: #831317;  /* active / press */
+  --red-800: #5E0E11;
+  --red-900: #3D090B;
+
+  /* --- Concrete / Steel Gray (structure) --- logo gray ≈ #58595B --- */
+  --gray-25:  #FAFBFB;
+  --gray-50:  #F5F6F7;
+  --gray-100: #EDEEEF;
+  --gray-200: #E0E1E3;
+  --gray-300: #C6C8CB;
+  --gray-400: #9DA0A4;
+  --gray-500: #76797D;
+  --gray-600: #58595B;  /* logo gray */
+  --gray-700: #404145;
+  --gray-800: #2A2B2E;
+  --gray-900: #18191B;
+  --gray-950: #0E0F10;
+
+  /* --- Absolutes --- */
+  --black: #0B0B0C;
+  --white: #FFFFFF;
+
+  /* --- System status (alarm / monitoring states) --- */
+  --status-armed:    #BE1F24; /* armed / alarm / triggered */
+  --status-secure:   #1F9D57; /* disarmed-secure / online / ok */
+  --status-warning:  #E0A210; /* trouble / needs attention */
+  --status-offline:  #9DA0A4; /* device offline / unknown */
+  --status-armed-bg:   #FCEFEF;
+  --status-secure-bg:  #E7F6EE;
+  --status-warning-bg: #FCF3DE;
+  --status-offline-bg: #F5F6F7;
+
+  /* ====================================================================
+     SEMANTIC ALIASES — reference these in components, not the raw scale.
+     ==================================================================== */
+
+  /* Primary action */
+  --color-primary:        var(--red-500);
+  --color-primary-hover:  var(--red-600);
+  --color-primary-active: var(--red-700);
+  --color-on-primary:     var(--white);
+
+  /* Text */
+  --text-strong:   var(--black);    /* headings */
+  --text-body:     var(--gray-800); /* paragraph */
+  --text-muted:    var(--gray-500); /* captions, meta */
+  --text-faint:    var(--gray-400); /* placeholder, disabled */
+  --text-inverse:  var(--white);    /* on dark / on red */
+  --text-link:     var(--red-600);
+
+  /* Surfaces */
+  --surface-page:     var(--white);
+  --surface-subtle:   var(--gray-50);
+  --surface-card:     var(--white);
+  --surface-concrete: var(--gray-100); /* "concrete" section bg */
+  --surface-dark:     var(--gray-900); /* dark band / footer */
+  --surface-darker:   var(--gray-950);
+  --surface-inverse:  var(--black);
+
+  /* Borders */
+  --border-subtle:  var(--gray-100);
+  --border-default: var(--gray-200);
+  --border-strong:  var(--gray-300);
+  --border-dark:    var(--gray-700);
+
+  /* Focus */
+  --focus-ring: var(--red-500);
+}

@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Octagon Security — Base layer
+   Light element defaults + a few utility classes used across cards/kits.
+   Tokens come from tokens/*.css.
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { overflow-x: clip; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: var(--leading-normal);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  color: var(--text-strong);
+  line-height: var(--leading-snug);
+  margin: 0 0 0.4em;
+  font-weight: var(--weight-bold);
+}
+
+p { margin: 0 0 1em; text-wrap: pretty; }
+
+a { color: var(--text-link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Display heading (hero) --- */
+.os-display {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  color: var(--text-strong);
+}
+
+/* --- Eyebrow / kicker (the "GET OCTAGON SECURED" treatment) --- */
+.os-eyebrow {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* --- Red accent rule used under section titles --- */
+.os-accent-rule {
+  width: 56px;
+  height: var(--border-accent);
+  background: var(--color-primary);
+  border: 0;
+  margin: var(--space-3) 0 var(--space-5);
+}
+
+.os-mono { font-family: var(--font-mono); }
