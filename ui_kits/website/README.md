@@ -1,5 +1,7 @@
 # Website UI Kit — Octagon Security
 
+> **Owners / non-technical users:** read the main [README](../../README.md) first — it explains the whole project in plain English.
+
 An interactive, high-fidelity recreation of the Octagon Security marketing site
 (octagonsecured.com). Built from the live site's copy, structure, imagery, and the
 brand foundations in this design system. Composes the core component primitives —
