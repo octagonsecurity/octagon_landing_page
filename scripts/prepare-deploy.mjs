@@ -18,7 +18,9 @@ mkdirSync(DIST, { recursive: true });
 
 cpSync(WEB, DIST, { recursive: true });
 cpSync(join(ROOT, 'assets'), join(DIST, 'assets'), { recursive: true });
+cpSync(join(ROOT, 'tokens'), join(DIST, 'tokens'), { recursive: true });
 cpSync(join(ROOT, 'styles.css'), join(DIST, 'styles.css'));
+cpSync(join(ROOT, 'base.css'), join(DIST, 'base.css'));
 cpSync(join(ROOT, '_ds_bundle.js'), join(DIST, '_ds_bundle.js'));
 
 // Patch HTML paths: ../../../styles.css -> /styles.css, ../../../_ds_bundle.js -> /_ds_bundle.js
