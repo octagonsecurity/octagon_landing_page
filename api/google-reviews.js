@@ -1,5 +1,7 @@
-const PLACE_ID = 'ChIJU7SV0-LVgaMRPvofdtmIvio';
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/Octagon+Security/@26.139327,-80.269756,17z/data=!3m1!4b1!4m6!3m5!1s0xa381d5e2d395b453:0x2abe88d9761ffa3e!8m2!3d26.139327!4d-80.269756!16s%2Fg%2F11y511ns2n';
+
+// Google Place IDs can expire (~12 months). We resolve fresh via Find Place when needed.
+const PLACE_SEARCH = 'Octagon Security 786-928-0986 Miami FL';
 
 function initials(name = '') {
   return name
@@ -19,6 +21,58 @@ function formatReviewDate(unixSeconds) {
   });
 }
 
+async function findPlaceId(key) {
+  const findParams = new URLSearchParams({
+    input: PLACE_SEARCH,
+    inputtype: 'textquery',
+    fields: 'place_id',
+    key,
+  });
+  const findRes = await fetch(
+    `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?${findParams}`,
+  );
+  const findData = await findRes.json();
+
+  if (findData.status === 'OK' && findData.candidates?.[0]?.place_id) {
+    return findData.candidates[0].place_id;
+  }
+
+  const searchParams = new URLSearchParams({ query: PLACE_SEARCH, key });
+  const searchRes = await fetch(
+    `https://maps.googleapis.com/maps/api/place/textsearch/json?${searchParams}`,
+  );
+  const searchData = await searchRes.json();
+
+  if (searchData.status === 'OK' && searchData.results?.[0]?.place_id) {
+    return searchData.results[0].place_id;
+  }
+
+  throw new Error(
+    findData.error_message
+    || searchData.error_message
+    || 'Could not find Octagon Security on Google Maps',
+  );
+}
+
+async function fetchPlaceDetails(placeId, key) {
+  const params = new URLSearchParams({
+    place_id: placeId,
+    fields: 'reviews,rating,user_ratings_total,url',
+    reviews_sort: 'newest',
+    key,
+  });
+  const res = await fetch(
+    `https://maps.googleapis.com/maps/api/place/details/json?${params}`,
+  );
+  return res.json();
+}
+
+async function resolvePlaceId(key) {
+  const fromEnv = process.env.GOOGLE_PLACE_ID?.trim();
+  if (fromEnv) return fromEnv;
+  return findPlaceId(key);
+}
+
 export default async function handler(req, res) {
   const key = process.env.GOOGLE_PLACES_API_KEY;
   res.setHeader('Content-Type', 'application/json');
@@ -32,16 +86,17 @@ export default async function handler(req, res) {
   }
 
   try {
-    const params = new URLSearchParams({
-      place_id: PLACE_ID,
-      fields: 'reviews,rating,user_ratings_total,url',
-      reviews_sort: 'newest',
-      key,
-    });
-    const apiRes = await fetch(
-      `https://maps.googleapis.com/maps/api/place/details/json?${params}`,
-    );
-    const data = await apiRes.json();
+    let placeId = await resolvePlaceId(key);
+    let data = await fetchPlaceDetails(placeId, key);
+
+    // Stale Place ID in env or cache — look up a fresh one and retry once.
+    if (data.status === 'NOT_FOUND' && process.env.GOOGLE_PLACE_ID) {
+      placeId = await findPlaceId(key);
+      data = await fetchPlaceDetails(placeId, key);
+    } else if (data.status === 'NOT_FOUND') {
+      placeId = await findPlaceId(key);
+      data = await fetchPlaceDetails(placeId, key);
+    }
 
     if (data.status !== 'OK' || !data.result) {
       return res.status(502).json({
