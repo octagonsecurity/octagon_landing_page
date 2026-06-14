@@ -2,6 +2,7 @@
 // Maps: https://www.google.com/maps/place/Octagon+Security/...!1s0xa381d5e2d395b453:0x2abe88d9761ffa3e
 const PLACE_ID = 'ChIJU7SV0-LVgaMRPvofdtmIvio';
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/Octagon+Security/@26.139327,-80.269756,17z/data=!3m1!4b1!4m6!3m5!1s0xa381d5e2d395b453:0x2abe88d9761ffa3e!8m2!3d26.139327!4d-80.269756!16s%2Fg%2F11y511ns2n';
+const MIN_REVIEW_RATING = 4;
 
 function initials(name = '') {
   return name
@@ -26,7 +27,9 @@ function mapReviews(place) {
     rating: place.rating,
     total: place.userRatingCount,
     url: place.googleMapsUri || GOOGLE_MAPS_URL,
-    reviews: (place.reviews || []).map((review) => ({
+    reviews: (place.reviews || [])
+      .filter((review) => (review.rating ?? 0) >= MIN_REVIEW_RATING)
+      .map((review) => ({
       name: review.authorAttribution?.displayName || 'Google User',
       date: formatReviewDate(review.publishTime),
       initials: initials(review.authorAttribution?.displayName || 'G'),
