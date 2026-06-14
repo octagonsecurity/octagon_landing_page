@@ -294,6 +294,16 @@
 }
 @media (max-width: 1080px) {
   .os-nav, .os-header__phone { display: none; }
+  .os-header__main { justify-content: flex-start; }
+  .os-header__actions {
+    order: -1;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .os-header__logo {
+    flex: 0 1 auto;
+    margin-left: auto;
+  }
   .os-header__burger { display: inline-flex; }
   .os-mobilenav { display: flex; }
 }
