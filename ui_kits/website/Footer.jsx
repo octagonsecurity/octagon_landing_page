@@ -46,6 +46,10 @@ function Footer() {
       <div className="os-footer__bar">
         <div className="os-container os-footer__bar-inner">
           <span>© 2026 Octagon Security. All rights reserved.</span>
+          <span className="os-footer__bar-links">
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms of Service</a>
+          </span>
           <span className="os-footer__legal">Free Estimates · Licensed &amp; Insured · FL License EF0000848</span>
         </div>
       </div>

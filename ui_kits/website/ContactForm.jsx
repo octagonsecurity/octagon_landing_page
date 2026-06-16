@@ -7,11 +7,16 @@ function useForm() {
   const [sent, setSent] = React.useState(false);
   const [submitting, setSubmitting] = React.useState(false);
   const [error, setError] = React.useState('');
-  const [fields, setFields] = React.useState({ name: '', phone: '', email: '', propertyType: '', message: '' });
+  const [fields, setFields] = React.useState({ name: '', phone: '', email: '', propertyType: '', message: '', consent: false });
   const set = (k) => (e) => setFields(f => ({ ...f, [k]: e.target.value }));
+  const toggleConsent = (e) => setFields(f => ({ ...f, consent: e.target.checked }));
   const submit = async (e) => {
     e.preventDefault();
     setError('');
+    if (!fields.consent) {
+      setError('Please agree to be contacted before submitting.');
+      return;
+    }
     setSubmitting(true);
     try {
       const res = await fetch(FORMSPREE_URL, {
@@ -23,6 +28,9 @@ function useForm() {
           email: fields.email,
           propertyType: fields.propertyType,
           message: fields.message,
+          consent: true,
+          consentText: 'Agreed to be contacted by phone, text, or email about this request.',
+          consentTimestamp: new Date().toISOString(),
           _subject: `New Quote Request from ${fields.name}`,
         }),
       });
@@ -35,12 +43,25 @@ function useForm() {
     }
   };
   return {
-    sent, submitting, error, submit, fields, set,
-    reset: () => { setSent(false); setError(''); setFields({ name: '', phone: '', email: '', propertyType: '', message: '' }); },
+    sent, submitting, error, submit, fields, set, toggleConsent,
+    reset: () => { setSent(false); setError(''); setFields({ name: '', phone: '', email: '', propertyType: '', message: '', consent: false }); },
   };
 }
 
-function FormFields({ compact, fields, set }) {
+function FormConsent({ checked, onChange }) {
+  return (
+    <label className="os-form__consent">
+      <input type="checkbox" name="consent" checked={checked} onChange={onChange} required />
+      <span>
+        I agree to be contacted by Octagon Security by phone, text, or email about my request.
+        Message and data rates may apply. See our{' '}
+        <a href="/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+      </span>
+    </label>
+  );
+}
+
+function FormFields({ compact, fields, set, consent, onConsent }) {
   const { Input: FInput } = DS();
   return (
     <>
@@ -51,6 +72,7 @@ function FormFields({ compact, fields, set }) {
         <FInput label="Property Type" placeholder="Home, warehouse, office…" value={fields.propertyType} onChange={set('propertyType')} />
       </div>
       <FInput label="How can we help?" multiline placeholder="Tell us about your property and what you're looking to protect…" value={fields.message} onChange={set('message')} />
+      <FormConsent checked={consent} onChange={onConsent} />
     </>
   );
 }
@@ -89,7 +111,7 @@ function ContactSection() {
         <div className="os-contact__card">
           {f.sent ? <ThankYou onReset={f.reset} /> : (
             <form className="os-form" onSubmit={f.submit}>
-              <FormFields fields={f.fields} set={f.set} />
+              <FormFields fields={f.fields} set={f.set} consent={f.fields.consent} onConsent={f.toggleConsent} />
               {f.error && <p className="os-form__error">{f.error}</p>}
               <FButton variant="primary" size="lg" type="submit" block disabled={f.submitting} iconRight={<FIc n="arrow-right" />}>
                 {f.submitting ? 'Sending…' : 'Request My Quote'}
@@ -117,7 +139,7 @@ function QuoteModal({ open, onClose }) {
         </div>
         {f.sent ? <ThankYou onReset={onClose} /> : (
           <form className="os-form" onSubmit={f.submit}>
-            <FormFields compact fields={f.fields} set={f.set} />
+            <FormFields compact fields={f.fields} set={f.set} consent={f.fields.consent} onConsent={f.toggleConsent} />
             {f.error && <p className="os-form__error">{f.error}</p>}
             <FButton variant="primary" size="lg" type="submit" block disabled={f.submitting}>
               {f.submitting ? 'Sending…' : 'Request My Quote'}

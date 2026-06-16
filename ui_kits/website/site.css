@@ -149,6 +149,27 @@
 .os-form__thanks h3 { font-family: var(--font-heading); font-size: var(--text-2xl); color: var(--text-strong); margin: 0 0 8px; }
 .os-form__thanks p { color: var(--text-muted); max-width: 42ch; margin: 0 auto var(--space-5); }
 .os-form__error { color: var(--color-primary); font-size: var(--text-sm); margin: 0; }
+.os-form__consent { display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm); line-height: 1.5; color: var(--text-muted); cursor: pointer; }
+.os-form__consent input { width: 18px; height: 18px; flex: none; margin-top: 2px; accent-color: var(--color-primary); cursor: pointer; }
+.os-form__consent a { color: var(--text-strong); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.os-form__consent a:hover { color: var(--color-primary); }
+
+/* ---------------- Legal pages ---------------- */
+.os-legal { padding-block: clamp(2.5rem, 6vw, 5rem); }
+.os-legal__inner { max-width: 760px; }
+.os-legal__crumb { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-family: var(--font-heading); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); margin-bottom: var(--space-4); }
+.os-legal__crumb a { color: var(--text-muted); }
+.os-legal__crumb a:hover { color: var(--color-primary); }
+.os-legal__title { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; font-size: clamp(2rem, 4vw, 3rem); line-height: 1; color: var(--text-strong); margin: 0 0 var(--space-3); }
+.os-legal__updated { font-size: var(--text-sm); color: var(--text-muted); margin: 0 0 var(--space-7); }
+.os-legal__body { font-size: var(--text-md); line-height: 1.7; color: var(--text-body); }
+.os-legal__body h2 { font-family: var(--font-heading); font-weight: 700; font-size: var(--text-xl); color: var(--text-strong); margin: var(--space-7) 0 var(--space-3); }
+.os-legal__body p { margin: 0 0 var(--space-4); }
+.os-legal__body ul { margin: 0 0 var(--space-4); padding-left: 1.4em; }
+.os-legal__body li { margin-bottom: var(--space-2); }
+.os-legal__body a { color: var(--color-primary); font-weight: 600; }
+.os-legal__body a:hover { text-decoration: underline; }
+.os-legal__note { font-size: var(--text-sm); color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: var(--space-5); margin-top: var(--space-6) !important; }
 
 /* ---------------- Quote modal ---------------- */
 .os-modal { position: fixed; inset: 0; z-index: 100; background: rgba(11,11,12,.6);
@@ -189,6 +210,9 @@
 .os-footer__bar { border-top: 1px solid var(--gray-800); }
 .os-footer__bar-inner { display: flex; justify-content: space-between; gap: var(--space-4);
   padding-block: var(--space-4); font-size: var(--text-xs); color: var(--gray-500); flex-wrap: wrap; }
+.os-footer__bar-links { display: flex; gap: var(--space-4); }
+.os-footer__bar-links a { color: var(--gray-400); text-decoration: none; }
+.os-footer__bar-links a:hover { color: #fff; }
 .os-footer__legal { text-transform: uppercase; letter-spacing: .04em; }
 
 /* ---------------- Reviews ---------------- */

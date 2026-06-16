@@ -22,6 +22,8 @@ window.OS_SEO = {
     const svcIdx = path.indexOf('/services/');
     if (svcIdx >= 0) return path.slice(0, svcIdx);
     if (path.includes('/about')) return path.replace(/\/?about(\/index\.html?)?\/?$/, '');
+    if (path.includes('/privacy')) return path.replace(/\/?privacy(\/index\.html?)?\/?$/, '');
+    if (path.includes('/terms')) return path.replace(/\/?terms(\/index\.html?)?\/?$/, '');
     const cleaned = path.replace(/\/index\.html?$/, '').replace(/\/$/, '');
     return cleaned === '' ? '' : cleaned;
   },
