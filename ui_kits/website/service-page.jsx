@@ -20,6 +20,11 @@ function getSlug() {
   return p.get('s') || 'home-security';
 }
 
+function getAnswerData(svc) {
+  const answers = window.OS_SERVICE_ANSWERS || {};
+  return answers[svc.slug] || {};
+}
+
 function ServiceHero({ svc, onQuote }) {
   const heroImg = assetPath(svc.image);
   const heroWebp = window.OS_webpSrc ? window.OS_webpSrc(heroImg) : heroImg.replace(/\.png$/i, '.webp');
@@ -60,6 +65,29 @@ function ServiceIntro({ svc, onQuote }) {
         </div>
         <div className="sv-intro__img">
           <Picture src={assetPath(svc.image)} alt={svc.title} loading="lazy" decoding="async"/>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ServiceAnswers({ svc }) {
+  const answerData = getAnswerData(svc);
+  const answers = svc.answer_blocks || answerData.quick || [];
+  if (!answers.length) return null;
+  return (
+    <section className="sv-features sv-answers" id="quick-answers">
+      <div className="os-container">
+        <div className="sv-features__head">
+          {(() => { const { SectionTitle } = DS(); return <SectionTitle eyebrow="Quick Answers" title={`${svc.title.split(' in ')[0]} Answers`} align="center" subtitle="Straightforward details for property owners comparing security options."/>; })()}
+        </div>
+        <div className="sv-features__grid">
+          {answers.map(item => (
+            <div className="sv-feat" key={item.q}>
+              <h3 className="sv-feat__title">{item.q}</h3>
+              <p className="sv-benefit__body">{item.a}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -186,6 +214,7 @@ function App() {
       <main>
         <ServiceHero svc={svc} onQuote={()=>setQuote(true)}/>
         <ServiceIntro svc={svc} onQuote={()=>setQuote(true)}/>
+        <ServiceAnswers svc={svc}/>
         <ServiceFeatures svc={svc}/>
         <ServiceBenefits svc={svc}/>
         <ServiceClosing svc={svc} onQuote={()=>setQuote(true)}/>
