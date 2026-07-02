@@ -13,6 +13,9 @@ const ROOT = join(__dirname, '..');
 const WEB = join(ROOT, 'ui_kits/website');
 const DIST = join(ROOT, 'dist');
 
+execSync('node scripts/generate-seo.mjs', { cwd: ROOT, stdio: 'inherit' });
+execSync('node scripts/enhance-service-seo.mjs', { cwd: ROOT, stdio: 'inherit' });
+
 if (existsSync(DIST)) rmSync(DIST, { recursive: true });
 mkdirSync(DIST, { recursive: true });
 
