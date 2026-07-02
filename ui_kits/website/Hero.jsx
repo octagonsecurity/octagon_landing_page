@@ -1,11 +1,17 @@
 /* Octagon Security — Website UI Kit · Hero */
 const { Button: HButton, Badge: HBadge } = window.OctagonSecurityDesignSystem_9e6033;
 const HIc = window.OS_Ic;
+const HERO_BACKGROUND_IMAGE = "url('/assets/team-ladders.webp'), url('/assets/team-ladders.png')";
 
 function Hero({ onQuote }) {
   return (
     <section className="os-hero">
-      <div className="os-hero__media" role="img" aria-label="Professional security installation" />
+      <div
+        className="os-hero__media"
+        role="img"
+        aria-label="Octagon Security team installing structured cabling"
+        style={{ backgroundImage: HERO_BACKGROUND_IMAGE }}
+      />
       <div className="os-hero__scrim" />
       <div className="os-container os-hero__inner">
         <span className="os-eyebrow os-eyebrow--inv">Get Octagon Secured</span>
