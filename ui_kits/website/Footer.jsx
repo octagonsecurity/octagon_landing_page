@@ -22,7 +22,7 @@ function Footer() {
     <footer className="os-footer">
       <div className="os-container os-footer__grid">
         <div className="os-footer__brand">
-          <Picture className="os-footer__logo" src="/assets/logo-full.png" alt="Octagon Security" width="120" height="120" loading="lazy" decoding="async" />
+          <Picture className="os-footer__logo" src="/assets/logo-full.png" alt="Octagon Security" width="76" height="76" loading="lazy" decoding="async" />
           <p className="os-footer__tag">Get Octagon Secured.</p>
           <p className="os-footer__lic">FL License EF0000848 · ETL / UL Listed</p>
           <div className="os-footer__social">
