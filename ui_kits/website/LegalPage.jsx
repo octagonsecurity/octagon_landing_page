@@ -1,6 +1,6 @@
 /* Octagon Security — Privacy Policy & Terms of Service */
 
-const LEGAL_UPDATED = 'June 16, 2026';
+const LEGAL_UPDATED = 'September 22, 2026';
 
 function LegalShell({ title, children }) {
   return (
@@ -49,6 +49,25 @@ function PrivacyPolicy() {
 
       <h2>Communications &amp; Consent</h2>
       <p>When you submit our contact form, you agree that we may contact you by phone, text message, or email regarding your request. Message and data rates may apply. You can opt out of marketing messages at any time by replying STOP to a text or asking us to stop contacting you.</p>
+
+      <h2>SMS/Text Messaging</h2>
+
+      <h3>SMS Communications</h3>
+      <p>Octagon Security may collect your mobile phone number and, with your consent, use it to send text messages related to your customer relationship with us. These messages may include customer service communications, responses to inquiries or missed calls, service appointment reminders and updates, technician recommendations, estimates, system information, and other information related to your security system or services.</p>
+
+      <h3>Consent</h3>
+      <p>By providing your mobile phone number and consenting to receive text messages from Octagon Security, you agree to receive customer care and informational SMS messages from us. Message frequency may vary. Message and data rates may apply. Consent to receive SMS messages is not a condition of purchasing any goods or services.</p>
+
+      <h3>Opting Out</h3>
+      <p>You may opt out of receiving SMS messages at any time by replying STOP to any message. After you send STOP, you will receive a confirmation message and no further SMS messages will be sent, unless you subsequently choose to opt back in.</p>
+      <p>You may also reply HELP to any message for assistance. For additional assistance, you may contact Octagon Security at <a href="tel:786-928-0986">786.928.0986</a> or visit <a href="https://www.octagonsecured.com">www.octagonsecured.com</a>.</p>
+
+      <h3>SMS Consent and Sharing</h3>
+      <p>SMS consent is not shared with third parties or affiliates for their own marketing or promotional purposes. Octagon Security does not sell or rent your mobile phone number or SMS opt-in information to third parties.</p>
+      <p>We may use service providers, such as our communications and technology providers, to facilitate the delivery of SMS messages on our behalf. These providers may process your information solely as necessary to provide services to Octagon Security and are not authorized to use your SMS consent information for their own marketing purposes.</p>
+
+      <h3>Privacy</h3>
+      <p>Information collected through SMS communications is handled in accordance with this Privacy Policy. For more information about how Octagon Security collects, uses, and protects personal information, please review the remainder of this Privacy Policy.</p>
 
       <h2>How Long We Keep Information</h2>
       <p>We retain form submissions and related correspondence for as long as needed to respond to your inquiry, provide services, and maintain business records — typically up to three years unless a longer period is required by law.</p>

@@ -73,11 +73,103 @@
   "provider": {
     "@id": "https://www.octagonsecured.com/#business"
   },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Miami, Florida"
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami, Florida"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Broward County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Palm Beach County, FL"
+    }
+  ],
+  "url": "https://www.octagonsecured.com/services/access-control/",
+  "@id": "https://www.octagonsecured.com/services/access-control/#service",
+  "serviceType": "Access control and keyless entry system installation",
+  "category": "Access control system installation",
+  "image": "https://www.octagonsecured.com/assets/svc-keypad.png",
+  "providerMobility": "dynamic",
+  "mainEntityOfPage": {
+    "@id": "https://www.octagonsecured.com/services/access-control/#webpage"
   },
-  "url": "https://www.octagonsecured.com/services/access-control/"
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://www.octagonsecured.com/services/access-control/",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "+1-786-928-0986",
+      "contactType": "sales",
+      "areaServed": "South Florida"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Access Control Systems & Keyless Entry Solutions in Miami, Florida service options",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Controlled Access to Entry Points",
+          "description": "Manage entry permissions for employees and visitors, Eliminate key-related risks and lost credentials, Monitor and restrict access by time or zone, Ideal for offices, warehouses, multi-tenant properties, and residential applications"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Keyless Entry & Credential Management",
+          "description": "Keycards and key fobs, Mobile credentials via smartphone, Programmable access codes, Biometric options including fingerprint and facial scan"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Activity Tracking & Audit Logs",
+          "description": "Detailed logs of who accessed each entry point, Timestamps for all entry and exit events, Visibility into patterns and anomalies, Documentation for accountability and compliance"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Remote Access & System Control",
+          "description": "Manage your system from anywhere, Add or remove users remotely, Unlock doors from your phone, Real-time notifications for access events"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integration with Security Systems",
+          "description": "Combines with cameras for complete visual coverage, Integrates with alarms and monitoring platforms, Centralized control of all security systems, Scalable with your existing infrastructure"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Scalable & Reliable Systems",
+          "description": "Easily expand to additional doors and users, Built for single-entry and multi-door installations, Dependable long-term performance, Ongoing support and system updates"
+        }
+      }
+    ]
+  }
 }
   </script>
   <script type="application/ld+json">
@@ -111,6 +203,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does an access control system do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Access control lets a property owner decide who can enter specific doors, when they can enter, and how access is granted or removed without relying on traditional keys."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What keyless entry options are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common options include keycards, key fobs, mobile credentials, programmable entry codes, biometric readers, and managed door controllers for single-door or multi-door properties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can access control integrate with cameras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Access control can integrate with surveillance cameras and alarms so entry events can be paired with video and alerts for better accountability."
+      }
+    },
     {
       "@type": "Question",
       "name": "What types of keyless entry solutions do you offer?",
@@ -168,6 +284,28 @@
       }
     }
   ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.octagonsecured.com/services/access-control/#webpage",
+  "url": "https://www.octagonsecured.com/services/access-control/",
+  "name": "Access Control Systems & Keyless Entry Solutions in Miami, Florida",
+  "description": "At Octagon Security, we provide professional access control and keyless entry systems for businesses and residential properties across South Florida. Our systems are designed to give you full control over who can access your property, when they can enter, and how access is managed.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.octagonsecured.com/#website",
+    "name": "Octagon Security",
+    "url": "https://www.octagonsecured.com/"
+  },
+  "about": {
+    "@id": "https://www.octagonsecured.com/services/access-control/#service"
+  },
+  "mainEntity": {
+    "@id": "https://www.octagonsecured.com/services/access-control/#service"
+  }
 }
   </script>
   <link rel="stylesheet" href="../../../styles.css">
@@ -248,6 +386,7 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <script src="../../seo-config.js"></script>
   <script src="../../service-data.js"></script>
+  <script src="../../service-answers.js"></script>
 </head>
 <body>
   <noscript>
@@ -256,6 +395,14 @@
       <p>Optimizing Efficiency with Secure Property Management Solutions</p>
       <p>At Octagon Security, we provide professional access control and keyless entry systems for businesses and residential properties across South Florida. Our systems are designed to give you full control over who can access your property, when they can enter, and how access is managed.</p>
       <p>Traditional keys create unnecessary risk and limited control. Our systems replace outdated locks with secure digital access using keycards, mobile credentials, biometric options, and programmable entry codes. Beyond installation, we provide ongoing support, system integration, and scalable solutions that grow with your needs.</p>
+      <section aria-labelledby="quick-answers-heading">
+        <h2 id="quick-answers-heading">Quick Answers</h2>
+        <dl>
+        <dt>What does an access control system do?</dt><dd>Access control lets a property owner decide who can enter specific doors, when they can enter, and how access is granted or removed without relying on traditional keys.</dd>
+        <dt>What keyless entry options are available?</dt><dd>Common options include keycards, key fobs, mobile credentials, programmable entry codes, biometric readers, and managed door controllers for single-door or multi-door properties.</dd>
+        <dt>Can access control integrate with cameras?</dt><dd>Yes. Access control can integrate with surveillance cameras and alarms so entry events can be paired with video and alerts for better accountability.</dd>
+        </dl>
+      </section>
       <dl>
       <dt>What types of keyless entry solutions do you offer?</dt><dd>We provide keycard systems, biometric access, and mobile credential solutions designed for seamless operation.</dd>
       <dt>How do biometric access systems work?</dt><dd>Biometric systems use unique physical characteristics such as fingerprints, facial scans, or retina patterns to grant access.</dd>

@@ -73,11 +73,103 @@
   "provider": {
     "@id": "https://www.octagonsecured.com/#business"
   },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Miami, Florida"
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami, Florida"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Broward County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Palm Beach County, FL"
+    }
+  ],
+  "url": "https://www.octagonsecured.com/services/home-security/",
+  "@id": "https://www.octagonsecured.com/services/home-security/#service",
+  "serviceType": "Home and business security system installation",
+  "category": "Security system installation",
+  "image": "https://www.octagonsecured.com/assets/svc-home-business.png",
+  "providerMobility": "dynamic",
+  "mainEntityOfPage": {
+    "@id": "https://www.octagonsecured.com/services/home-security/#webpage"
   },
-  "url": "https://www.octagonsecured.com/services/home-security/"
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://www.octagonsecured.com/services/home-security/",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "+1-786-928-0986",
+      "contactType": "sales",
+      "areaServed": "South Florida"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Home & Business Security System Installation service options",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Complete Security System Solutions",
+          "description": "Every system is tailored to your property, ensuring proper coverage, clean integration, and reliable long-term performance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Built for Homes & Commercial Properties",
+          "description": "Whether it's a new installation or an upgrade, we provide systems that are scalable, easy to manage, and built to last."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fast Response & Professional Installation",
+          "description": "Our clients rely on us to respond when it matters — and follow through."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Systems That Work Together",
+          "description": "Your cameras, alarms, access control, and fire systems can be integrated into one platform."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ongoing Service & Support",
+          "description": "Most of our clients continue working with us because we stay responsive and involved long after installation."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Serving South Florida",
+          "description": "Miami, Doral, Fort Lauderdale, Hollywood, Boca Raton, Surrounding areas"
+        }
+      }
+    ]
+  }
 }
   </script>
   <script type="application/ld+json">
@@ -111,6 +203,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a complete security system include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A complete Octagon Security system can combine cameras, burglar alarms, fire alarms, access control, monitoring, and structured cabling into one reliable setup for a home or business."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is this service best for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is built for homes, offices, retail spaces, warehouses, multi-tenant buildings, and commercial properties that need professionally designed protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Octagon Security design the system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The team reviews the property layout, entry points, blind spots, network needs, monitoring goals, and future expansion plans before recommending the right mix of devices and infrastructure."
+      }
+    },
     {
       "@type": "Question",
       "name": "How long does it take to install a home or business security system?",
@@ -152,6 +268,28 @@
       }
     }
   ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.octagonsecured.com/services/home-security/#webpage",
+  "url": "https://www.octagonsecured.com/services/home-security/",
+  "name": "Home & Business Security System Installation",
+  "description": "At Octagon Security, we provide professional security system installation for businesses and homeowners across Miami-Dade, Broward, and Palm Beach. Our systems are designed for reliability, ease of use, and long-term performance — whether you need a simple alarm system or a fully integrated solution. We focus on fast response, clean installations, and ongoing support, which is why most of our work comes from repeat clients and referrals.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.octagonsecured.com/#website",
+    "name": "Octagon Security",
+    "url": "https://www.octagonsecured.com/"
+  },
+  "about": {
+    "@id": "https://www.octagonsecured.com/services/home-security/#service"
+  },
+  "mainEntity": {
+    "@id": "https://www.octagonsecured.com/services/home-security/#service"
+  }
 }
   </script>
   <link rel="stylesheet" href="../../../styles.css">
@@ -232,6 +370,7 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <script src="../../seo-config.js"></script>
   <script src="../../service-data.js"></script>
+  <script src="../../service-answers.js"></script>
 </head>
 <body>
   <noscript>
@@ -240,6 +379,14 @@
       <p>Experience Peace of Mind with Reliable Alarm Protection</p>
       <p>At Octagon Security, we provide professional security system installation for businesses and homeowners across Miami-Dade, Broward, and Palm Beach. Our systems are designed for reliability, ease of use, and long-term performance — whether you need a simple alarm system or a fully integrated solution. We focus on fast response, clean installations, and ongoing support, which is why most of our work comes from repeat clients and referrals.</p>
       <p>With years of hands-on experience, we design and install security systems that are built for real-world use — whether it's a residential property or a large commercial facility. We focus on proper system design, clean installation, and long-term reliability so your system performs the way it should from day one. Beyond installation, we provide ongoing support, system upgrades, and monitoring services to keep everything running smoothly.</p>
+      <section aria-labelledby="quick-answers-heading">
+        <h2 id="quick-answers-heading">Quick Answers</h2>
+        <dl>
+        <dt>What does a complete security system include?</dt><dd>A complete Octagon Security system can combine cameras, burglar alarms, fire alarms, access control, monitoring, and structured cabling into one reliable setup for a home or business.</dd>
+        <dt>Who is this service best for?</dt><dd>It is built for homes, offices, retail spaces, warehouses, multi-tenant buildings, and commercial properties that need professionally designed protection.</dd>
+        <dt>How does Octagon Security design the system?</dt><dd>The team reviews the property layout, entry points, blind spots, network needs, monitoring goals, and future expansion plans before recommending the right mix of devices and infrastructure.</dd>
+        </dl>
+      </section>
       <dl>
       <dt>How long does it take to install a home or business security system?</dt><dd>Installation typically takes between 4 to 8 hours, depending on system complexity and property size. Our team works efficiently to minimize disruption, ensuring devices, cameras, and alarms are calibrated properly and fully operational.</dd>
       <dt>Can security systems be upgraded over time?</dt><dd>Absolutely. Security systems are designed with scalability in mind. Additional cameras, sensors, or access control components can be integrated seamlessly as your needs grow.</dd>

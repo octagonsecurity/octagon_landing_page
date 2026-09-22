@@ -73,11 +73,99 @@
   "provider": {
     "@id": "https://www.octagonsecured.com/#business"
   },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "South Florida"
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Broward County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Palm Beach County, FL"
+    }
+  ],
+  "url": "https://www.octagonsecured.com/services/structured-cabling/",
+  "@id": "https://www.octagonsecured.com/services/structured-cabling/#service",
+  "serviceType": "Structured cabling and network infrastructure installation",
+  "category": "Network cabling installation",
+  "image": "https://www.octagonsecured.com/assets/team-ladders.png",
+  "providerMobility": "dynamic",
+  "mainEntityOfPage": {
+    "@id": "https://www.octagonsecured.com/services/structured-cabling/#webpage"
   },
-  "url": "https://www.octagonsecured.com/services/structured-cabling/"
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://www.octagonsecured.com/services/structured-cabling/",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "+1-786-928-0986",
+      "contactType": "sales",
+      "areaServed": "South Florida"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Structured Cabling Installation in South Florida service options",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "CAT6 & CAT6A Cabling",
+          "description": "Professional network cabling installations designed for reliable performance and future expansion."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fiber Optic Cabling",
+          "description": "High-speed fiber optic backbone installations for demanding network infrastructure requirements."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Data Drops & Workstation Cabling",
+          "description": "Installation of data outlets, workstation connections, and network cabling."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Network Racks & Patch Panels",
+          "description": "Organized network infrastructure for easy maintenance and long-term reliability."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wireless Access Point Cabling",
+          "description": "Cabling and mounting solutions for wireless access points."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Warehouse & Commercial Network Infrastructure",
+          "description": "Scalable network cabling solutions designed for real-world operations and future growth."
+        }
+      }
+    ]
+  }
 }
   </script>
   <script type="application/ld+json">
@@ -111,6 +199,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does structured cabling include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Structured cabling can include CAT6 or CAT6A cabling, fiber optic cabling, data drops, patch panels, network racks, cable management, and wireless access point cabling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does structured cabling matter for security systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Security cameras, access control readers, wireless access points, and network equipment all depend on reliable cabling for stable data, power, and long-term performance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can cabling be installed in existing buildings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Structured cabling can often be installed in occupied offices, warehouses, retail spaces, and commercial buildings with planning to limit disruption."
+      }
+    },
     {
       "@type": "Question",
       "name": "What is structured cabling?",
@@ -176,6 +288,28 @@
       }
     }
   ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.octagonsecured.com/services/structured-cabling/#webpage",
+  "url": "https://www.octagonsecured.com/services/structured-cabling/",
+  "name": "Structured Cabling Installation in South Florida",
+  "description": "At Octagon Security, we provide professional structured cabling solutions for offices, warehouses, retail locations, healthcare facilities, and commercial properties throughout South Florida. Our team designs and installs reliable network infrastructure including CAT6 cabling, fiber optic cabling, data drops, patch panels, network racks, and wireless access point cabling. Whether you're building a new facility or upgrading an existing network, we deliver organized, scalable cabling systems designed for long-term performance.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.octagonsecured.com/#website",
+    "name": "Octagon Security",
+    "url": "https://www.octagonsecured.com/"
+  },
+  "about": {
+    "@id": "https://www.octagonsecured.com/services/structured-cabling/#service"
+  },
+  "mainEntity": {
+    "@id": "https://www.octagonsecured.com/services/structured-cabling/#service"
+  }
 }
   </script>
   <link rel="stylesheet" href="../../../styles.css">
@@ -256,6 +390,7 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <script src="../../seo-config.js"></script>
   <script src="../../service-data.js"></script>
+  <script src="../../service-answers.js"></script>
 </head>
 <body>
   <noscript>
@@ -264,6 +399,14 @@
       <p>Reliable network cabling solutions for offices, warehouses, retail locations, healthcare facilities, and commercial properties throughout Miami-Dade and Broward County.</p>
       <p>At Octagon Security, we provide professional structured cabling solutions for offices, warehouses, retail locations, healthcare facilities, and commercial properties throughout South Florida. Our team designs and installs reliable network infrastructure including CAT6 cabling, fiber optic cabling, data drops, patch panels, network racks, and wireless access point cabling. Whether you're building a new facility or upgrading an existing network, we deliver organized, scalable cabling systems designed for long-term performance.</p>
       <p>Reliable network infrastructure is the foundation of modern business operations. Octagon Security provides structured cabling solutions that support computers, phones, wireless access points, security cameras, access control systems, and other connected technologies. Our installations are organized, scalable, and designed to support future growth.</p>
+      <section aria-labelledby="quick-answers-heading">
+        <h2 id="quick-answers-heading">Quick Answers</h2>
+        <dl>
+        <dt>What does structured cabling include?</dt><dd>Structured cabling can include CAT6 or CAT6A cabling, fiber optic cabling, data drops, patch panels, network racks, cable management, and wireless access point cabling.</dd>
+        <dt>Why does structured cabling matter for security systems?</dt><dd>Security cameras, access control readers, wireless access points, and network equipment all depend on reliable cabling for stable data, power, and long-term performance.</dd>
+        <dt>Can cabling be installed in existing buildings?</dt><dd>Yes. Structured cabling can often be installed in occupied offices, warehouses, retail spaces, and commercial buildings with planning to limit disruption.</dd>
+        </dl>
+      </section>
       <dl>
       <dt>What is structured cabling?</dt><dd>Structured cabling is an organized network infrastructure system that supports data, voice, wireless access points, security systems, and other communication technologies within a building or facility.</dd>
       <dt>What is the difference between CAT5e and CAT6 cabling?</dt><dd>CAT6 cabling generally supports higher data speeds and improved performance compared to CAT5e. CAT6 is commonly recommended for new commercial installations to support current and future network demands.</dd>

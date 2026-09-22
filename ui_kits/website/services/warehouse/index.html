@@ -73,11 +73,103 @@
   "provider": {
     "@id": "https://www.octagonsecured.com/#business"
   },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Miami-Dade"
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Broward County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Palm Beach County, FL"
+    }
+  ],
+  "url": "https://www.octagonsecured.com/services/warehouse/",
+  "@id": "https://www.octagonsecured.com/services/warehouse/#service",
+  "serviceType": "Warehouse and industrial security system installation",
+  "category": "Commercial security system installation",
+  "image": "https://www.octagonsecured.com/assets/svc-warehouse.png",
+  "providerMobility": "dynamic",
+  "mainEntityOfPage": {
+    "@id": "https://www.octagonsecured.com/services/warehouse/#webpage"
   },
-  "url": "https://www.octagonsecured.com/services/warehouse/"
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://www.octagonsecured.com/services/warehouse/",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "+1-786-928-0986",
+      "contactType": "sales",
+      "areaServed": "South Florida"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Warehouse Security Systems in Miami-Dade service options",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Security Camera Systems",
+          "description": "Monitor inventory, loading docks, and entrances, Parking area and perimeter coverage, Commercial-grade video surveillance, 24/7 visibility across all operations"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Access Control Systems",
+          "description": "Key cards, mobile credentials, and key fobs, Managed entry points for employees and visitors, Improve security and accountability, Track and log all access activity"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Burglar Alarm Protection",
+          "description": "Intrusion detection systems and monitored alarms, Motion sensors and perimeter security, Protect inventory, equipment, and facilities, Fast response from central monitoring"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Loading Dock Security",
+          "description": "Monitor shipping and receiving activity, Track deliveries with strategically placed cameras, Controlled access points for dock areas, Improve operational visibility"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Structured Cabling & Network Infrastructure",
+          "description": "Reliable CAT6 and fiber optic cabling, Supports cameras, access control, and wireless, Clean, organized installation, Built for long-term performance"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Remote Monitoring & Mobile Access",
+          "description": "View cameras and manage users from anywhere, Receive alerts for activity and security events, Monitor via secure mobile applications, Remote management tools for complete control"
+        }
+      }
+    ]
+  }
 }
   </script>
   <script type="application/ld+json">
@@ -111,6 +203,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a warehouse security system protect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A warehouse security system helps protect inventory, loading docks, employee entrances, parking areas, equipment, exterior perimeters, and after-hours activity across the facility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which systems are usually combined for warehouses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most warehouse projects combine video surveillance, access control, burglar alarms, remote monitoring, and structured cabling so cameras, doors, and alerts work together."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does cabling matter for warehouse security?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reliable structured cabling supports cameras, access points, network equipment, and access control hardware across large spaces where weak infrastructure can cause outages and blind spots."
+      }
+    },
     {
       "@type": "Question",
       "name": "What security cameras are best for warehouses?",
@@ -152,6 +268,28 @@
       }
     }
   ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.octagonsecured.com/services/warehouse/#webpage",
+  "url": "https://www.octagonsecured.com/services/warehouse/",
+  "name": "Warehouse Security Systems in Miami-Dade",
+  "description": "Warehouses face unique security challenges including inventory protection, employee access management, loading dock activity, after-hours monitoring, and perimeter security. Octagon Security designs integrated warehouse security systems that combine video surveillance, access control, burglar alarms, and structured cabling to help protect people, property, and operations.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.octagonsecured.com/#website",
+    "name": "Octagon Security",
+    "url": "https://www.octagonsecured.com/"
+  },
+  "about": {
+    "@id": "https://www.octagonsecured.com/services/warehouse/#service"
+  },
+  "mainEntity": {
+    "@id": "https://www.octagonsecured.com/services/warehouse/#service"
+  }
 }
   </script>
   <link rel="stylesheet" href="../../../styles.css">
@@ -232,6 +370,7 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <script src="../../seo-config.js"></script>
   <script src="../../service-data.js"></script>
+  <script src="../../service-answers.js"></script>
 </head>
 <body>
   <noscript>
@@ -240,6 +379,14 @@
       <p>Integrated Security Solutions for Warehouses and Distribution Centers</p>
       <p>Warehouses face unique security challenges including inventory protection, employee access management, loading dock activity, after-hours monitoring, and perimeter security. Octagon Security designs integrated warehouse security systems that combine video surveillance, access control, burglar alarms, and structured cabling to help protect people, property, and operations.</p>
       <p>Whether you're securing a warehouse, distribution center, logistics facility, or industrial property, we provide scalable solutions designed for long-term reliability and operational visibility. Our systems help business owners monitor activity, control access, and respond quickly to security events from anywhere.</p>
+      <section aria-labelledby="quick-answers-heading">
+        <h2 id="quick-answers-heading">Quick Answers</h2>
+        <dl>
+        <dt>What does a warehouse security system protect?</dt><dd>A warehouse security system helps protect inventory, loading docks, employee entrances, parking areas, equipment, exterior perimeters, and after-hours activity across the facility.</dd>
+        <dt>Which systems are usually combined for warehouses?</dt><dd>Most warehouse projects combine video surveillance, access control, burglar alarms, remote monitoring, and structured cabling so cameras, doors, and alerts work together.</dd>
+        <dt>Why does cabling matter for warehouse security?</dt><dd>Reliable structured cabling supports cameras, access points, network equipment, and access control hardware across large spaces where weak infrastructure can cause outages and blind spots.</dd>
+        </dl>
+      </section>
       <dl>
       <dt>What security cameras are best for warehouses?</dt><dd>Commercial-grade IP cameras with high-resolution video, remote viewing, and night vision capabilities are typically the best choice. Camera placement should cover entrances, loading docks, inventory areas, and exterior perimeters.</dd>
       <dt>How many security cameras does a warehouse need?</dt><dd>The number of cameras depends on the facility size, layout, entrances, loading docks, and inventory areas. Most warehouse systems are custom designed based on the property's specific needs.</dd>

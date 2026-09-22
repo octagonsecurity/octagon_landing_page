@@ -73,11 +73,99 @@
   "provider": {
     "@id": "https://www.octagonsecured.com/#business"
   },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "South Florida"
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Broward County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Palm Beach County, FL"
+    }
+  ],
+  "url": "https://www.octagonsecured.com/services/cameras/",
+  "@id": "https://www.octagonsecured.com/services/cameras/#service",
+  "serviceType": "Security camera installation and video surveillance",
+  "category": "Video surveillance installation",
+  "image": "https://www.octagonsecured.com/assets/svc-cameras.png",
+  "providerMobility": "dynamic",
+  "mainEntityOfPage": {
+    "@id": "https://www.octagonsecured.com/services/cameras/#webpage"
   },
-  "url": "https://www.octagonsecured.com/services/cameras/"
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://www.octagonsecured.com/services/cameras/",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "+1-786-928-0986",
+      "contactType": "sales",
+      "areaServed": "South Florida"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Security Camera Installation & Video Surveillance Systems in South Florida service options",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Designed for Homes & Commercial Properties",
+          "description": "Each system is designed to eliminate blind spots and provide reliable coverage where it matters most."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Camera Systems for Larger Facilities",
+          "description": "Advanced systems can include multi-sensor or panoramic cameras that reduce blind spots across large areas."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clean Installation & Proper Infrastructure",
+          "description": "Our structured cabling experience ensures your system is reliable from day one."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Remote Access & Monitoring",
+          "description": "Modern systems allow full control and visibility no matter where you are."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Upgrades & System Expansions",
+          "description": "We help bring older systems up to current standards without starting from scratch."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fast Response & Ongoing Support",
+          "description": "With over 65 years of combined experience, we provide support our clients rely on long-term."
+        }
+      }
+    ]
+  }
 }
   </script>
   <script type="application/ld+json">
@@ -111,6 +199,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a security camera installation include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A professional camera installation can include indoor and outdoor cameras, recorder setup, mobile viewing, motion alerts, night vision, clean cabling, and placement designed to reduce blind spots."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can cameras be viewed remotely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Modern camera systems can be viewed from a phone, tablet, or computer so authorized users can see live video, review recorded footage, and receive activity alerts from anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can cameras work with alarms and access control?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Camera systems can be integrated with burglar alarms, access control, and monitoring tools to give property owners better visibility when an event occurs."
+      }
+    },
     {
       "@type": "Question",
       "name": "What types of smart security cameras do you install in South Florida?",
@@ -152,6 +264,28 @@
       }
     }
   ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.octagonsecured.com/services/cameras/#webpage",
+  "url": "https://www.octagonsecured.com/services/cameras/",
+  "name": "Security Camera Installation & Video Surveillance Systems in South Florida",
+  "description": "At Octagon Security, we provide professional security camera installation and video surveillance systems for businesses and homes across Miami-Dade, Broward, and Palm Beach. Our systems are designed for clear visibility, remote access, and long-term reliability — whether you need basic coverage or a fully integrated commercial system.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.octagonsecured.com/#website",
+    "name": "Octagon Security",
+    "url": "https://www.octagonsecured.com/"
+  },
+  "about": {
+    "@id": "https://www.octagonsecured.com/services/cameras/#service"
+  },
+  "mainEntity": {
+    "@id": "https://www.octagonsecured.com/services/cameras/#service"
+  }
 }
   </script>
   <link rel="stylesheet" href="../../../styles.css">
@@ -232,6 +366,7 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <script src="../../seo-config.js"></script>
   <script src="../../service-data.js"></script>
+  <script src="../../service-answers.js"></script>
 </head>
 <body>
   <noscript>
@@ -240,6 +375,14 @@
       <p>Professional Surveillance Systems You Can Rely On</p>
       <p>At Octagon Security, we provide professional security camera installation and video surveillance systems for businesses and homes across Miami-Dade, Broward, and Palm Beach. Our systems are designed for clear visibility, remote access, and long-term reliability — whether you need basic coverage or a fully integrated commercial system.</p>
       <p>Modern security cameras do more than just record — they give you full control over your property. Our systems include high-definition and 4K camera options, night vision and low-light performance, motion detection and real-time alerts, remote access from mobile devices, and cloud and local recording options.</p>
+      <section aria-labelledby="quick-answers-heading">
+        <h2 id="quick-answers-heading">Quick Answers</h2>
+        <dl>
+        <dt>What does a security camera installation include?</dt><dd>A professional camera installation can include indoor and outdoor cameras, recorder setup, mobile viewing, motion alerts, night vision, clean cabling, and placement designed to reduce blind spots.</dd>
+        <dt>Can cameras be viewed remotely?</dt><dd>Yes. Modern camera systems can be viewed from a phone, tablet, or computer so authorized users can see live video, review recorded footage, and receive activity alerts from anywhere.</dd>
+        <dt>Can cameras work with alarms and access control?</dt><dd>Yes. Camera systems can be integrated with burglar alarms, access control, and monitoring tools to give property owners better visibility when an event occurs.</dd>
+        </dl>
+      </section>
       <dl>
       <dt>What types of smart security cameras do you install in South Florida?</dt><dd>We install a range of smart security cameras including indoor, outdoor, wireless, and PTZ models. Each system is customized to meet specific monitoring needs, providing clear video, motion detection, and mobile access.</dd>
       <dt>Can smart security cameras be monitored remotely?</dt><dd>Yes, all our smart cameras support remote monitoring via smartphones, tablets, or computers, allowing users to view live footage, receive alerts, and control camera settings from any location.</dd>

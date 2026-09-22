@@ -73,11 +73,103 @@
   "provider": {
     "@id": "https://www.octagonsecured.com/#business"
   },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Miami, Florida"
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami, Florida"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Broward County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Palm Beach County, FL"
+    }
+  ],
+  "url": "https://www.octagonsecured.com/services/fire-alarm/",
+  "@id": "https://www.octagonsecured.com/services/fire-alarm/#service",
+  "serviceType": "Fire alarm installation, testing, inspections, and monitoring",
+  "category": "Fire alarm system installation",
+  "image": "https://www.octagonsecured.com/assets/svc-smoke.png",
+  "providerMobility": "dynamic",
+  "mainEntityOfPage": {
+    "@id": "https://www.octagonsecured.com/services/fire-alarm/#webpage"
   },
-  "url": "https://www.octagonsecured.com/services/fire-alarm/"
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://www.octagonsecured.com/services/fire-alarm/",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "+1-786-928-0986",
+      "contactType": "sales",
+      "areaServed": "South Florida"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Fire Alarm Systems Installations, Testing & Inspections — Miami, Florida service options",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fire Alarm System Installation",
+          "description": "Every installation is designed to meet local, state, and national fire safety codes."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Inspection & Testing Services",
+          "description": "Annual and scheduled fire alarm inspections, System testing and verification, Troubleshooting and repairs, Documentation for compliance requirements"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "24/7 Fire Alarm Monitoring",
+          "description": "Constant monitoring for fire and smoke hazards, Immediate notification to emergency contacts or fire departments, Rapid response to alarms, Integration with central monitoring stations"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fast Response & Professional Installation",
+          "description": "Our clients rely on us to respond when it matters — and follow through."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Systems",
+          "description": "Your fire system can be integrated with cameras, alarms, and access control into one platform."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ongoing Support",
+          "description": "System maintenance and inspections, Troubleshooting and repairs, Monitoring services, System upgrades as your needs grow"
+        }
+      }
+    ]
+  }
 }
   </script>
   <script type="application/ld+json">
@@ -113,10 +205,26 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "What does fire alarm service include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fire alarm service can include system design support, device installation, inspection, testing, troubleshooting, repairs, monitoring setup, and documentation for compliance needs."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Why is professional fire alarm installation important?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Professional installation ensures proper placement, code compliance, and system reliability."
+        "text": "Professional installation helps ensure devices are placed correctly, wiring is reliable, the system is tested, and the installation is aligned with applicable fire safety requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can fire alarms be monitored 24/7?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Fire alarm systems can be connected to monitoring services so alarm events are communicated quickly even when the property is closed or unattended."
       }
     },
     {
@@ -176,6 +284,28 @@
       }
     }
   ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.octagonsecured.com/services/fire-alarm/#webpage",
+  "url": "https://www.octagonsecured.com/services/fire-alarm/",
+  "name": "Fire Alarm Systems Installations, Testing & Inspections — Miami, Florida",
+  "description": "Octagon Security provides complete fire alarm solutions including installation, inspections, monitoring, and ongoing service for properties across Miami-Dade, Broward, and Palm Beach.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.octagonsecured.com/#website",
+    "name": "Octagon Security",
+    "url": "https://www.octagonsecured.com/"
+  },
+  "about": {
+    "@id": "https://www.octagonsecured.com/services/fire-alarm/#service"
+  },
+  "mainEntity": {
+    "@id": "https://www.octagonsecured.com/services/fire-alarm/#service"
+  }
 }
   </script>
   <link rel="stylesheet" href="../../../styles.css">
@@ -256,6 +386,7 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <script src="../../seo-config.js"></script>
   <script src="../../service-data.js"></script>
+  <script src="../../service-answers.js"></script>
 </head>
 <body>
   <noscript>
@@ -264,6 +395,14 @@
       <p>Fire Alarm Installations & Inspection Services South Florida</p>
       <p>Octagon Security provides complete fire alarm solutions including installation, inspections, monitoring, and ongoing service for properties across Miami-Dade, Broward, and Palm Beach.</p>
       <p>Our team handles fire alarm system installation, annual inspections and testing, 24/7 fire alarm monitoring, troubleshooting and repairs, and system upgrades and expansions — for commercial buildings and offices, warehouses and industrial facilities, multi-family and residential properties, and new construction.</p>
+      <section aria-labelledby="quick-answers-heading">
+        <h2 id="quick-answers-heading">Quick Answers</h2>
+        <dl>
+        <dt>What does fire alarm service include?</dt><dd>Fire alarm service can include system design support, device installation, inspection, testing, troubleshooting, repairs, monitoring setup, and documentation for compliance needs.</dd>
+        <dt>Why is professional fire alarm installation important?</dt><dd>Professional installation helps ensure devices are placed correctly, wiring is reliable, the system is tested, and the installation is aligned with applicable fire safety requirements.</dd>
+        <dt>Can fire alarms be monitored 24/7?</dt><dd>Yes. Fire alarm systems can be connected to monitoring services so alarm events are communicated quickly even when the property is closed or unattended.</dd>
+        </dl>
+      </section>
       <dl>
       <dt>Why is professional fire alarm installation important?</dt><dd>Professional installation ensures proper placement, code compliance, and system reliability.</dd>
       <dt>How often should fire alarm systems be tested?</dt><dd>Fire alarm systems should be tested at least once every six months.</dd>

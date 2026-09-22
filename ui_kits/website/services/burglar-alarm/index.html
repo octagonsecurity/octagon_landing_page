@@ -73,11 +73,99 @@
   "provider": {
     "@id": "https://www.octagonsecured.com/#business"
   },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "South Florida"
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Broward County, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Palm Beach County, FL"
+    }
+  ],
+  "url": "https://www.octagonsecured.com/services/burglar-alarm/",
+  "@id": "https://www.octagonsecured.com/services/burglar-alarm/#service",
+  "serviceType": "Burglar alarm installation and intrusion detection",
+  "category": "Intrusion detection system installation",
+  "image": "https://www.octagonsecured.com/assets/svc-burglar-alarm.png",
+  "providerMobility": "dynamic",
+  "mainEntityOfPage": {
+    "@id": "https://www.octagonsecured.com/services/burglar-alarm/#webpage"
   },
-  "url": "https://www.octagonsecured.com/services/burglar-alarm/"
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://www.octagonsecured.com/services/burglar-alarm/",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "+1-786-928-0986",
+      "contactType": "sales",
+      "areaServed": "South Florida"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Advanced Burglar Alarm Installation & Intrusion Detection in South Florida service options",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Complete Alarm Systems with 24/7 Monitoring",
+          "description": "Our systems are designed to detect intrusion quickly and ensure immediate response when it matters."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Designed for Homes & Commercial Properties",
+          "description": "Each system is tailored to your property layout, eliminating vulnerabilities and ensuring proper coverage."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fast Response & Reliable Installation",
+          "description": "With over 65 years of combined experience, we install systems correctly the first time."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Smart Alarm Integration",
+          "description": "This allows you to monitor and control your system from anywhere."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ongoing Service & System Support",
+          "description": "Most of our clients stay with us long-term because we stay responsive."
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Common Reasons Clients Call Us",
+          "description": "Need a new alarm system installed, Existing system not working properly, Frequent false alarms, Switching monitoring providers, Expanding or upgrading current system"
+        }
+      }
+    ]
+  }
 }
   </script>
   <script type="application/ld+json">
@@ -111,6 +199,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is included in a burglar alarm system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A burglar alarm system can include door and window contacts, motion sensors, glass-break detection, keypad or touchscreen control, mobile alerts, sirens, and optional 24/7 monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do monitored burglar alarms work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the alarm detects a possible intrusion, the system sends an alert to the monitoring center or designated users so the event can be verified and handled quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can false alarms be reduced?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Proper sensor placement, correct device selection, user training, and routine maintenance help reduce false alarms while keeping real intrusion detection reliable."
+      }
+    },
     {
       "@type": "Question",
       "name": "How long does it take to install a burglar alarm system?",
@@ -176,6 +288,28 @@
       }
     }
   ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.octagonsecured.com/services/burglar-alarm/#webpage",
+  "url": "https://www.octagonsecured.com/services/burglar-alarm/",
+  "name": "Advanced Burglar Alarm Installation & Intrusion Detection in South Florida",
+  "description": "At Octagon Security, we provide professional burglar alarm installation and 24/7 monitoring for businesses and homes across South Florida. Our systems are designed to detect threats immediately, reduce false alarms, and provide reliable protection backed by fast response and ongoing support. Whether you need a new system or an upgrade, we deliver solutions that are built to perform and easy to manage.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.octagonsecured.com/#website",
+    "name": "Octagon Security",
+    "url": "https://www.octagonsecured.com/"
+  },
+  "about": {
+    "@id": "https://www.octagonsecured.com/services/burglar-alarm/#service"
+  },
+  "mainEntity": {
+    "@id": "https://www.octagonsecured.com/services/burglar-alarm/#service"
+  }
 }
   </script>
   <link rel="stylesheet" href="../../../styles.css">
@@ -256,6 +390,7 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <script src="../../seo-config.js"></script>
   <script src="../../service-data.js"></script>
+  <script src="../../service-answers.js"></script>
 </head>
 <body>
   <noscript>
@@ -264,6 +399,14 @@
       <p>Burglar Alarm Installation & Monitoring in South Florida</p>
       <p>At Octagon Security, we provide professional burglar alarm installation and 24/7 monitoring for businesses and homes across South Florida. Our systems are designed to detect threats immediately, reduce false alarms, and provide reliable protection backed by fast response and ongoing support. Whether you need a new system or an upgrade, we deliver solutions that are built to perform and easy to manage.</p>
       
+      <section aria-labelledby="quick-answers-heading">
+        <h2 id="quick-answers-heading">Quick Answers</h2>
+        <dl>
+        <dt>What is included in a burglar alarm system?</dt><dd>A burglar alarm system can include door and window contacts, motion sensors, glass-break detection, keypad or touchscreen control, mobile alerts, sirens, and optional 24/7 monitoring.</dd>
+        <dt>How do monitored burglar alarms work?</dt><dd>When the alarm detects a possible intrusion, the system sends an alert to the monitoring center or designated users so the event can be verified and handled quickly.</dd>
+        <dt>Can false alarms be reduced?</dt><dd>Yes. Proper sensor placement, correct device selection, user training, and routine maintenance help reduce false alarms while keeping real intrusion detection reliable.</dd>
+        </dl>
+      </section>
       <dl>
       <dt>How long does it take to install a burglar alarm system?</dt><dd>Installation typically ranges from a few hours to a full day, depending on property size, complexity, and integration requirements. Our team ensures professional setup with minimal disruption to daily activities.</dd>
       <dt>Can these systems integrate with smart home devices?</dt><dd>Yes, our systems are compatible with most smart home devices, including mobile apps, cameras, and automated notifications. This allows homeowners and business operators in Miami, Florida to control and monitor security from anywhere conveniently.</dd>
