@@ -8,6 +8,30 @@ const CLIENTS = [
     h: 52,
   },
   {
+    id: 'client-gucci',
+    src: '/assets/client-gucci-w.png',
+    alt: 'Gucci',
+    h: 46,
+  },
+  {
+    id: 'client-brioni',
+    src: '/assets/client-brioni-w.png',
+    alt: 'Brioni',
+    h: 36,
+  },
+  {
+    id: 'client-tudor',
+    src: '/assets/client-tudor-w.png',
+    alt: 'Tudor',
+    h: 50,
+  },
+  {
+    id: 'client-cdpeacock',
+    src: '/assets/client-cdpeacock-w.png',
+    alt: 'CD Peacock',
+    h: 54,
+  },
+  {
     id: 'client-timepiece',
     src: '/assets/client-timepiece-w.png',
     alt: 'Timepiece Trading',
@@ -63,11 +87,11 @@ function ClientLogos() {
           Trusted by South Florida's finest
           <span className="os-clients__line"></span>
         </span>
-        {/* Desktop: single row */}
-        <div className="os-clients__logos os-clients__logos--desktop">
+        {/* Screen-reader list (visually hidden) */}
+        <div className="os-clients__logos os-clients__logos--sr">
           {CLIENTS.map(c => <LogoItem key={c.id} {...c} />)}
         </div>
-        {/* Mobile: infinite marquee carousel */}
+        {/* Infinite marquee carousel */}
         <div className="os-clients__marquee" aria-hidden="true">
           <div className="os-clients__marquee-track">
             {[...CLIENTS, ...CLIENTS].map((c, i) => <LogoItem key={c.id + '-' + i} {...c} />)}
